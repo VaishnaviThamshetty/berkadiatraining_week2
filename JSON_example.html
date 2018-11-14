@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <title>Creation of array object in javascript using JSON</title>
+		
+      <script language = "javascript" >
+
+         document.writeln("<h2>JSON array object</h2>");
+
+         var students = { "CSE" : [ 
+            { "Name"  : "Anjali", "rollnumber" : 348 },
+            { "Name"  : "Vaishu", "rollnumber" : 355 }],  
+				
+            "ECE"  : [
+               { "Name"  : "Kuttu", "rollnumber" : 354 }, 
+               { "Name"  : "Manu", "rollnumber" : 345 }] ,
+            
+               "EEE"  : [
+               { "Name"  : "Hari", "rollnumber" : 356 }, 
+               { "Name"  : "Shamili", "rollnumber" : 353 }] ,
+
+               "Mech"  : [
+               { "Name"  : "Sahithi", "rollnumber" : 318 }, 
+               { "Name"  : "Barghavi", "rollnumber" : 378 }] 
+
+         }    
+
+         var i = 0
+         document.writeln("CSE students:")
+         for(i = 0;i<students.CSE.length;i++)
+         {	document.writeln("</br>")
+            document.writeln(students.CSE[i].Name);
+            document.writeln(students.CSE[i].rollnumber);
+         }
+        document.writeln("</br>")
+        document.writeln("ECE students:")
+        for(i = 0;i<students.ECE.length;i++){
+           document.writeln("</br>")
+            document.writeln(students.ECE[i].Name);
+            document.writeln(students.ECE[i].rollnumber);
+         }
+        document.writeln("</br>")
+        document.writeln("EEE students:")
+         for(i = 0;i<students.EEE.length;i++){
+            document.writeln("</br>")
+            document.writeln(students.EEE[i].Name);
+            document.writeln(students.EEE[i].rollnumber);
+         }
+        document.writeln("</br>")
+        document.writeln("Mech student:s")
+         for(i = 0;i<students.Mech.length;i++){
+            document.writeln("</br>")
+            document.writeln(students.Mech[i].Name);
+            document.writeln(students.Mech[i].rollnumber);
+         }
+      </script>
+
+   </head>
+	
+   <body>
+   </body>
+	
+</html>
